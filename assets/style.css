@@ -1,0 +1,55 @@
+*{
+    font-size: 20px;
+    margin: 0;
+}
+
+h1{
+    color: red;
+    font-size: 30px;
+}
+
+.container{
+    width: 1050px;
+    margin: 0 auto;
+}
+
+#header{
+    background-color: #E9ECEF;
+    height: 100vh;
+}
+
+.headerBox{  
+    display: flex;
+    align-self: flex-end;
+    height: 400px;
+}
+
+.headerFoto{
+    height: 100%;
+}
+
+.headerText{
+
+
+} 
+
+.headerText h1{
+    margin-bottom: 24px;
+}
+
+
+
+
+
+
+nav{
+    width: 15%;
+    background-color: #212529;
+    color: #ffff;
+    position: fixed;
+    height: 100%;
+    padding-top: 180px;
+    z-index: 1;
+}
+
+
