@@ -2,9 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   list-style: none;
-  line-height: 26px;
+  line-height: 28px;
 }
 h1{
   font-size: 26px;
@@ -14,7 +15,6 @@ h3{
   font-size: 20px;
   margin-bottom: 6px;
 }
-
 .heroText{
   width: 800px;
   height: 260px;
@@ -24,7 +24,7 @@ h3{
 /* -----HEADER------- */
 
 header{
-  height: 95vh;
+  height: 96vh;
   background: linear-gradient(to top, #E9ECEF 58%, #fff 42%);
 }
 .headerBox{
@@ -36,11 +36,10 @@ header{
   align-items: flex-end;
   text-align: center;
 }
-
 .headerImg{
   height: 50%;
   width: 100%;
-  background: url('./man_PNG6531.png');
+  background: url('./images/man_PNG6531.png');
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -59,13 +58,11 @@ header{
   height: 100%;
   margin: 0 0 50px 0;
 }
-
 .skill_title{
   height: 46px;
   font-size: 18px;
   line-height: 56px;
 }
-
 .skill_Bg{
   background-color: #CED4DA;
   height: 26px;
@@ -102,27 +99,23 @@ header{
   background-color: grey;
   width: 60%;
 }
-/* ----- exskill_text ------- */
-
-.exskills_text{
-  margin: 50px auto 80px auto;
-  text-align: center;
-
-}
 
 /* ----- exskill ------- */
-
 
 .exskills{
   width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto;
-  row-gap: 35px;
+  margin: 200px auto;
+  row-gap: 56px;
+
 }
 
-
+.exskills_text{
+  text-align: center;
+  margin-bottom: 50px;
+}
 
 .exskill_box{
   width: 100%;
@@ -137,36 +130,77 @@ header{
   display: inline-block;
   margin-top: 40px;
 }
-
 .exskill_textbox{
-  border-left: 1px solid grey;
   padding-left: 4%;
   max-width: 74%;
   display: inline-block;
   vertical-align: top;
 }
 
+
+
 .seo{
-  background: url('./SEO.png');
+  background: url('./images/SEO.png');
 }
-
 .wordpress{
-  background: url('./wordpress.png');
+  background: url('./images/wordpress.png');
 }
-
 .design{
-  background: url('./design.png');
+  background: url('./images/design.png');
 }
-
 .commerce{
-  background: url('./commerz.png');
+  background: url('./images/commerz.png');
 }
-
 .seo, .wordpress, .design, .commerce{
   background-size: contain;
   background-repeat: no-repeat;
 }
 
+/*------Kontakt----------*/
+
+.form{
+  background-color: #CED4DA;
+
+}
+.formbox{
+ width: 80%;
+ max-width: 400px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ margin: 0 auto;
+ height: 100vh;
+ position: sticky;
+}
+.name, .email, .phone, .message{
+ height: 30px;
+ width: 100px;
+}
+#name, #email, #phone{
+ height: 40px;
+ width: 100%;
+ border: 1px solid #808080c2;
+ margin-bottom: 20px;
+}
+#message{
+ height: 120px;
+ width: 100%;
+ border: 1px solid #808080c2;
+}
+.btn{
+ height: 40px;
+ width: 30%;
+ margin: 40px 0px 40px auto;
+ border: none;
+ font-size: 18px;
+ background-color: gray;
+ color: white;
+}
+.btn:hover{
+ background-color: green;
+ color: red;
+ font-weight: bold;
+}
 
 /* -----Menu------- */
 
@@ -175,11 +209,7 @@ header{
   bottom: 0;
   width: 100%;
 }
-.menuBox {
-  position: relative;
-  text-align: center;
 
-}
 .menuTitle {
   width: 100%;
   height: 50px;
@@ -187,7 +217,14 @@ header{
   color: white;
   font-size: 16px;
   border: none;
-  padding-left: 16px;
+  position: relative;
+}
+.menuTitle div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 .menuContent {
   display: none;
@@ -197,14 +234,21 @@ header{
   bottom: 50px;
   background-color: #212529;
   z-index: 1;
-  padding: 50px 0;
-
+ 
 }
-.menuContent a {
-  color: black;
-  padding: 12px 16px;
+
+.menu_links {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 26px;
+}
+
+.menu_links a {
   text-decoration: none;
-  display: block;
   color: #fff;
 }
 
@@ -218,13 +262,11 @@ header{
   header{
       background: #E9ECEF;
   }
-
   .headerBox{
     justify-content: center;
     flex-direction: row-reverse;
     text-align: left;
   }  
-
   .headerText{
     height: 75%;
     width: 50%;
@@ -234,33 +276,23 @@ header{
     height: 70%;
     width: 50%;
   }
-  
-  .menuContent {
-    height: 240px;
-  }
-
   .skills {
     width: 60%;
   }
-
   .exskills{
     width: 60%;
     justify-content: space-between;
   }
-
   .exskill_box {
     width: 48%;
     max-width: 400px;
     height: 250px;
-
   }
-
   .exskill_textbox {
     max-width: 100%;
     border: none;
     padding-left: 0;  
   }
-
   .exskill_imgbox {
     height: 40%;
     display: block;
@@ -271,6 +303,11 @@ header{
 @media (min-width: 1200px) { 
   header{
     height: 100vh;
+  }
+  
+  .headerText p{
+    width: 100%;
+    max-width: 624px;
   }
   .skills {
     height: 504px;
@@ -287,19 +324,15 @@ header{
     margin: 0;
     padding-top: 16px;
   }
-
-
   .exskills{
     width: 60%;
     max-width: 900px;
     row-gap: 80px;
   }
-
   .exskill_box {
     height: auto;
     max-width: 400px;
   }
-
   .exskill_imgbox {
     height: 67%;
     width: 20%;
@@ -307,30 +340,20 @@ header{
     margin-right: 4%;
     margin-top: 30px;
   } 
-
   .exskill_textbox {
     max-width: 74%;
-    border-left: 1px solid grey;
     padding-left: 3%;
   }
-
-
-
-
-  .menu{
-    width: auto;
-    height: 100vh;        
+  .menu {
+    width: 50px;
   }
   .menuTitle {
-    width: 50px;
     height: 100vh;
   }
   .menuContent {
-    width: 180px;
+    width: 234px;
     height: 100vh;
     bottom: 0px;
     left: 42px;
-    padding: 50px;
-    text-align: center;       
   }
 }

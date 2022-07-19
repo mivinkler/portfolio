@@ -18,7 +18,7 @@
         </section>
     </header> 
     <main>
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="skill_text">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quaerat est ad soluta rerum sunt quam iusto amet quibusdam! Iusto distinctio assumenda totam aut possimus. Culpa ea consectetur itaque beatae! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, veniam laudantium nobis temporibus nihil maiores culpa praesentium incidunt, aspernatur minima quidem aliquid vitae porro earum esse facere commodi nemo deleniti.</p>
             </div>
@@ -51,10 +51,10 @@
                 <div class="progress fotoshop"></div>
             </div>
         </section>
-        <section class="exskills_text">
+        <section class="exskills_text" id="exskills_text">
   
         </section>
-        <section class="exskills">
+        <section class="exskills" id="exskills">
             <p class="exskills_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, dolores itaque eum possimus delectus suscipit qui quidem deleniti eius corporis non, adipisci a, modi beatae enim velit earum autem laborum! Nesciunt consequuntur pariatur, fugit perspiciatis sint eos adipisci impedit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, dolores itaque eum possimus delectus suscipit qui quidem deleniti eius corporis non, adipisci a, modi beatae enim velit earum autem laborum! Nesciunt consequuntur .</p>
             <div class="exskill_box">
                 <div class="exskill_imgbox seo"></div>
@@ -85,18 +85,32 @@
                 </div>
             </div>
         </section>
+        <section class="form" id="form">
+            <form class="formbox">
+                <label class="name" for="name">Name</label>
+                <input type="text" id="name">
+                <label class="email" for="email">Email</label>
+                <input type="email" id="email">
+                <label class="phone" for="phone">Telefon</label>
+                <input type="tel" id="phone">
+                <label class="message" for="message">Nachricht</label>
+                <textarea id="message"></textarea>
+                <button class="btn" type="submit">Senden</button>
+            </form>
+          </section>
     </main>        
     <footer>
         <div class="menu">
-            <div class="menuBox">
-            <button class="menuTitle">В</button>
-            <div class="menuContent">
-                <a href="#">Ссылка 1</a>
-                <a href="#">Ссылка 2</a>
-                <a href="#">Ссылка 3</a>
-                <a href="#">Ссылка 4</a>
-                <a href="#">Ссылка 5hjklf</a>
+            <div class="menuTitle">
+                <div class="menu_icon"></div>
             </div>
+            <div class="menuContent">
+                <div class="menu_links">
+                    <a href="#header">Home</a>
+                    <a href="#skills">Kenntnisse</a>
+                    <a href="#exskills">Erfahrungen</a>
+                    <a href="#form">Kontakt</a>
+                </div>
             </div>
         </div>
     </footer>  
