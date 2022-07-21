@@ -39,7 +39,7 @@ header{
 .headerImg{
   height: 50%;
   width: 100%;
-  background: url('./images/man_PNG6531.png');
+  background: url('./images/mein_foto.png');
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -56,8 +56,18 @@ header{
 }
 .skill_text{
   height: 100%;
-  margin: 0 0 50px 0;
 }
+
+.skill_text1{
+  margin-bottom: 40px;
+}
+
+.skill_text2{
+  margin-bottom: 90px;
+}
+
+
+
 .skill_title{
   height: 46px;
   font-size: 18px;
@@ -121,20 +131,31 @@ header{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 200px auto;
+  margin: 150px auto;
   row-gap: 56px;
 
 }
 
 .exskills_text{
-  text-align: center;
-  margin-bottom: 50px;
+  width: 80%;
+  margin: 150px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.exskills_text_left h3{
+  height: 50px;
+  font-size: 24px;
+}
+
+.exskills_text_right{  
+  margin-top: 57px;
 }
 
 .exskill_box{
   width: 100%;
-  max-width: 400px;
-  /* background-color: khaki; */
   
 }
 .exskill_imgbox{
@@ -145,8 +166,7 @@ header{
   margin-top: 40px;
 }
 .exskill_textbox{
-  padding-left: 4%;
-  max-width: 74%;
+  max-width: 70%;
   display: inline-block;
   vertical-align: top;
 }
@@ -168,6 +188,8 @@ header{
 .seo, .wordpress, .design, .commerce{
   background-size: contain;
   background-repeat: no-repeat;
+  width: 60px;
+  height: 70px;
 }
 
 /*------Kontakt----------*/
@@ -184,17 +206,17 @@ header{
  justify-content: center;
  margin: 0 auto;
  height: 100vh;
- position: sticky;
 }
 .name, .email, .phone, .message{
  height: 30px;
  width: 100px;
+ font-size: 18px;
 }
 #name, #email, #phone{
  height: 40px;
  width: 100%;
  border: 1px solid #808080c2;
- margin-bottom: 20px;
+ margin-bottom: 36px;
 }
 #message{
  height: 120px;
@@ -269,6 +291,19 @@ header{
 .menu:hover .menuContent {display: block;}
 .menuContent a:hover {color: red;}
 
+/* -----text_job------- */
+
+.text_job{
+  width: 80%;
+  height: 100%;
+  margin: 50px auto 200px auto;
+  text-align: center;
+}
+
+.text_job p:last-child{
+  margin-top: 60px;
+}
+
 /* -----Queries------- */
 
 @media (min-width: 768px) {
@@ -294,24 +329,31 @@ header{
     width: 60%;
   }
   .exskills{
+    justify-content: center;
     width: 60%;
-    justify-content: space-between;
   }
-  .exskill_box {
-    width: 48%;
-    max-width: 400px;
-    height: 250px;
+  .exskills_text{
+    width: 60%;
   }
+
   .exskill_textbox {
-    max-width: 100%;
-    border: none;
-    padding-left: 0;  
+    padding-left: 4px;  
+    max-width: 85%;
   }
+   /* 
   .exskill_imgbox {
     height: 40%;
     display: block;
     margin: 0 auto;
-  } 
+  }  */
+  .text_job{
+    width: 60%;
+  }
+
+  .text_job p:last-child{
+    width: 80%;
+    margin: 40px auto;
+  }
 }
 
 @media (min-width: 1200px) { 
@@ -338,24 +380,26 @@ header{
     margin: 0;
     padding-top: 16px;
   }
+
+  .exskills_text_left{
+    width: 49%;
+    text-align: right;
+  }
+
+  .exskills_text_right {
+    width: 48%;
+    margin-left: 3%;
+  }
   .exskills{
-    width: 60%;
-    max-width: 900px;
     row-gap: 80px;
+    justify-content: space-between;
   }
   .exskill_box {
     height: auto;
-    max-width: 400px;
-  }
-  .exskill_imgbox {
-    height: 67%;
-    width: 20%;
-    display: inline-block;
-    margin-right: 4%;
-    margin-top: 30px;
+    max-width: 44%;
   } 
   .exskill_textbox {
-    max-width: 74%;
+    max-width: 80%;
     padding-left: 3%;
   }
   .menu {
@@ -369,5 +413,9 @@ header{
     height: 100vh;
     bottom: 0px;
     left: 42px;
+  }
+  .menu_links{
+    align-items: flex-start;
+    margin-left: 40px;
   }
 }
