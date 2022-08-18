@@ -1,33 +1,33 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-  list-style: none;
   line-height: 28px;
 }
-h1{
+h1 {
   font-size: 26px;
   margin-bottom: 20px;
 }
-h3{
-  font-size: 20px;
-  margin-bottom: 6px;
+h3 {
+  font-size: 24px;
 }
-.heroText{
-  width: 800px;
-  height: 260px;
-  margin: 0 auto;
+section {
+  width: 80%;
+  margin: 100px auto;
+}
+.text p:last-child{
+  margin: 40px 0;
 }
 
-/* -----HEADER------- */
+/* ========== header ========== */
 
-header{
+header {
   height: 96vh;
   background: linear-gradient(to top, #E9ECEF 58%, #fff 42%);
 }
-.headerBox{
+.headerBox {
   height: 100%;
   width: 80%;
   margin: 0 auto;
@@ -36,7 +36,7 @@ header{
   align-items: flex-end;
   text-align: center;
 }
-.headerImg{
+.headerImg {
   height: 50%;
   width: 100%;
   background: url('./images/mein_foto.png');
@@ -45,234 +45,93 @@ header{
   background-repeat: no-repeat;
 }
 
-/* -----skills------- */
+/* ========== skills ========== */
 
-.skills{
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 100px auto;
+.skill_title:not(:first-child) {
+  margin-top: 20px;
 }
-.skill_text{
-  height: 100%;
-}
-
-.skill_text1{
-  margin-bottom: 40px;
-}
-
-.skill_text2{
-  margin-bottom: 90px;
-}
-
-
-
-.skill_title{
-  height: 46px;
-  font-size: 18px;
-  line-height: 56px;
-}
-
-.skill_Bgr{
+.skill_bar {
   background-color: #CED4DA;
   height: 26px;
 }
-
-.progress_bgr{
-  height: 100%;
-}
-
-.progress_bgr{
+.skill_value {
   animation: progress 3s normal forwards 1;
-}
-
-.html{
+  height: 100%;
   background-color: grey;
+}
+.html {
   width: 80%;
 }
-.css{
-  background-color: grey;
+.css {
   width: 70%;
 }
-.js{
-  background-color: grey;
+.js {
   width: 30%;
 }
-.git{
-  background-color: grey;
+.git {
   width: 30%;
 }
-.sql{
-  background-color: grey;
+.sql {
   width: 20%;
 }
-.figma{
-  background-color: grey;
+.figma {
   width: 80%;
 }
-.fotoshop{
-  background-color: grey;
+.fotoshop {
   width: 60%;
 }
 
-@keyframes progress{
-  0%{
-      width: 0;
+@keyframes progress {
+  0% {
+    width: 0;
   }
-  100%{
-      width: 100;}
+  100% {
+    width: 100;
+  }
 }
 
-/* ----- exskill ------- */
+/* ========== experiences text ========== */
 
-.exskills{
-  width: 80%;
+/* #experiences_text{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 150px auto;
-  row-gap: 56px;
+} */
 
-}
-
-.exskills_text{
-  width: 80%;
-  margin: 150px auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-
-.exskills_text_left h3{
-  height: 50px;
-  font-size: 24px;
-}
-
-.exskills_text_right{  
+/* .experiences_text_right{  
   margin-top: 57px;
-}
+} */
+/* ========== Menu ========== */
 
-.exskill_box{
-  width: 100%;
-  
-}
-.exskill_imgbox{
-  width: 70px;
-  height: 70%;
-  margin-right: 3%;
-  display: inline-block;
-  margin-top: 40px;
-}
-.exskill_textbox{
-  max-width: 70%;
-  display: inline-block;
-  vertical-align: top;
-}
-
-
-
-.seo{
-  background: url('./images/SEO.png');
-}
-.wordpress{
-  background: url('./images/wordpress.png');
-}
-.design{
-  background: url('./images/design.png');
-}
-.commerce{
-  background: url('./images/commerz.png');
-}
-.seo, .wordpress, .design, .commerce{
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 60px;
-  height: 70px;
-}
-
-/*------Kontakt----------*/
-
-.form{
-  background-color: #CED4DA;
-
-}
-.formbox{
- width: 80%;
- max-width: 400px;
- display: flex;
- flex-direction: column;
- justify-content: center;
- margin: 0 auto;
- height: 100vh;
-}
-.name, .email, .phone, .message{
- height: 30px;
- width: 100px;
- font-size: 18px;
-}
-#name, #email, #phone{
- height: 40px;
- width: 100%;
- border: 1px solid #808080c2;
- margin-bottom: 36px;
-}
-#message{
- height: 120px;
- width: 100%;
- border: 1px solid #808080c2;
-}
-.btn{
- height: 40px;
- width: 30%;
- margin: 40px 0px 40px auto;
- border: none;
- font-size: 18px;
- background-color: gray;
- color: white;
-}
-.btn:hover{
- background-color: green;
- color: red;
- font-weight: bold;
-}
-
-/* -----Menu------- */
-
-.menu{
+.menu {
   position: fixed;
   bottom: 0;
   width: 100%;
 }
-
 .menuTitle {
   width: 100%;
   height: 50px;
   background-color: #343A40;
   color: white;
   font-size: 16px;
-  border: none;
   position: relative;
 }
-.menuTitle div{
+.menuTitle div {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-right: -50%;
   transform: translate(-50%, -50%);
 }
 .menuContent {
   display: none;
   width: 100%;
-  height: 412px;      /*menu hohe*/
+  height: 508px;      /*menu hohe*/
   position: absolute;
   bottom: 50px;
   background-color: #212529;
   z-index: 1;
  
 }
-
 .menu_links {
   width: 100%;
   height: 100%;
@@ -282,125 +141,69 @@ header{
   align-items: center;
   row-gap: 26px;
 }
-
 .menu_links a {
   text-decoration: none;
   color: #fff;
 }
 
 .menu:hover .menuContent {display: block;}
-.menuContent a:hover {color: red;}
+.menuContent a:hover {color: green;}
 
-/* -----text_job------- */
+/* ======== Media queries ========== */
 
-.text_job{
-  width: 80%;
-  height: 100%;
-  margin: 50px auto 200px auto;
-  text-align: center;
-}
-
-.text_job p:last-child{
-  margin-top: 60px;
-}
-
-/* -----Queries------- */
-
-@media (min-width: 768px) {
-    
-  header{
-      background: #E9ECEF;
+@media (min-width: 768px) {    
+  section {
+    width: 60%;
   }
-  .headerBox{
+  header {
+    background: #E9ECEF;
+  }
+  .headerBox {
     justify-content: center;
     flex-direction: row-reverse;
     text-align: left;
   }  
-  .headerText{
+  .headerText {
     height: 75%;
     width: 50%;
   }
-
-  .headerImg{
+  .headerImg {
     height: 70%;
     width: 50%;
   }
-  .skills {
-    width: 60%;
-  }
-  .exskills{
-    justify-content: center;
-    width: 60%;
-  }
-  .exskills_text{
-    width: 60%;
-  }
-
-  .exskill_textbox {
-    padding-left: 4px;  
-    max-width: 85%;
-  }
-   /* 
-  .exskill_imgbox {
-    height: 40%;
-    display: block;
-    margin: 0 auto;
-  }  */
-  .text_job{
-    width: 60%;
-  }
-
-  .text_job p:last-child{
-    width: 80%;
-    margin: 40px auto;
+  .menuContent {
+    height: 406px;
   }
 }
 
-@media (min-width: 1200px) { 
-  header{
+@media (min-width: 1200px) {  
+  header {
     height: 100vh;
   }
-  
-  .headerText p{
+  .headerText p {
     width: 100%;
     max-width: 624px;
   }
+  .box {
+    width: 47%;
+  }
+  .text {
+    float: left;
+  }
   .skills {
-    height: 504px;
-    align-content: space-between;
+    float: right;
   }
-  .skill_Bg{
-    width: 50%;
+  #skills .text {
+    margin-top: 20px;
   }
-  .skill_title{
-    width: 44%;
-  }
-  .skill_text{
-    width: 44%;
-    margin: 0;
-    padding-top: 16px;
-  }
-
-  .exskills_text_left{
+  .experiences_text_left {
     width: 49%;
     text-align: right;
   }
 
-  .exskills_text_right {
+  .experiences_text_right {
     width: 48%;
     margin-left: 3%;
-  }
-  .exskills{
-    row-gap: 80px;
-    justify-content: space-between;
-  }
-  .exskill_box {
-    height: auto;
-    max-width: 44%;
-  } 
-  .exskill_textbox {
-    max-width: 80%;
-    padding-left: 3%;
   }
   .menu {
     width: 50px;
