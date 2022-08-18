@@ -1,16 +1,17 @@
-const observer = new IntersectionObserver(entries => {
-    // Создать наблюдателя
-    entries.forEach(entry => {
-        // перебор записей
-      const square = entry.target.querySelector('.skills');
-      if (entry.isIntersecting) {
-             // если элемент появился
-             // надо добавить CSS-класс для анимации
-        square.classList.add('progress');
-        return; // если класс добавлен, продолжать уже не надо
-      }
-      square.classList.remove('progress'); // завершено, теперь удалить класс
-    });
+// Создать наблюдателя
+const observer = new IntersectionObserver(entries => {  
+  // перебор записей
+  entries.forEach(entry => {    
+    // если элемент появился    
+    if (entry.isIntersecting) {            
+      let skill_value = document.getElementsByClassName("skill_value");      
+      for (var i = 0; i < skill_value.length; i++) {      
+        skill_value.item(i).classList.add('animate_bar');
+      }      
+    }    
   });
-  observer.observe(document.querySelector('.skill_Bgr')); 
-  // Сообщить наблюдателю, какие элементы следует отслеживать
+});
+// Сообщить наблюдателю, какие элементы следует отслеживать
+observer.observe(document.querySelector('.skill_bar')); 
+
+
