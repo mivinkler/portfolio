@@ -8,37 +8,44 @@
 }
 h1 {
   font-size: 26px;
-  margin-bottom: 20px;
 }
-h3 {
+h2 {
   font-size: 24px;
 }
-section {
-  width: 80%;
-  margin: 100px auto;
+h3 {
+  font-size: 20px;
+  font-weight: 500;
 }
-.text p:last-child{
-  margin: 40px 0;
+p:last-child {
+  margin-top: 30px;
+}
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+section {
+  width: 100%;
+  margin-top: 120px;
 }
 
 /* ========== header ========== */
 
 header {
-  height: 96vh;
-  background: linear-gradient(to top, #E9ECEF 58%, #fff 42%);
-}
-.headerBox {
-  height: 100%;
-  width: 80%;
+  height: 95vh;
+  background: linear-gradient(to top, #E9ECEF 58vh, #fff 42vh);
+} 
+header div{
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
+}
+.header_text {
+  height: 40%;
+  width: 70%;
+  padding-top: 8vh;
   text-align: center;
 }
-.headerImg {
-  height: 50%;
-  width: 100%;
+.header_foto {
+  height: 60%;
+  width: 320px;
   background: url('./images/mein_foto.png');
   background-size: contain;
   background-position: bottom;
@@ -47,17 +54,15 @@ header {
 
 /* ========== skills ========== */
 
-.skill_title:not(:first-child) {
-  margin-top: 20px;
+.skill_box {
+  margin-top: 60px;
+}
+.skill_box h3:nth-child(n+3) {
+  margin-top: 30px;
 }
 .skill_bar {
   background-color: #CED4DA;
   height: 26px;
-}
-.animate_bar {
-  animation: progress 3s normal forwards 1;
-  height: 100%;
-  background-color: grey;
 }
 .html {
   width: 80%;
@@ -80,7 +85,11 @@ header {
 .fotoshop {
   width: 60%;
 }
-
+.animate_bar {
+  animation: progress 3s normal forwards 1;
+  height: 100%;
+  background-color: grey;
+}
 @keyframes progress {
   0% {
     width: 0;
@@ -89,18 +98,39 @@ header {
     width: 100;
   }
 }
+/* ========== experience ========== */
 
-/* ========== experiences text ========== */
-
-/* #experiences_text{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-} */
-
-/* .experiences_text_right{  
-  margin-top: 57px;
-} */
+#experience_text {
+  width: 100%;
+}
+#experience_box div{
+  max-width: 400px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
+#experience_box i {
+  color: #4a7196;
+}
+#experience_box h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#experience_box p {
+  text-align: justify;
+}
+/* ========== text_job ========== */
+#text_job{
+  text-align: center;
+  margin-top: 180px;
+  margin-bottom: 100px;
+}
+#text_job p:last-child{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* ========== Menu ========== */
 
 .menu {
@@ -108,29 +138,29 @@ header {
   bottom: 0;
   width: 100%;
 }
-.menuTitle {
+.menu_title {
   width: 100%;
   height: 50px;
   background-color: #343A40;
   color: white;
   font-size: 16px;
+  border: none;
   position: relative;
 }
-.menuTitle div {
+.menu_title div {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 6%;
   transform: translate(-50%, -50%);
 }
-.menuContent {
+.menu_content {
   display: none;
   width: 100%;
-  height: 508px;      /*menu hohe*/
+  height: 58vh;      /*menu hohe*/
   position: absolute;
   bottom: 50px;
   background-color: #212529;
   z-index: 1;
- 
 }
 .menu_links {
   width: 100%;
@@ -145,79 +175,105 @@ header {
   text-decoration: none;
   color: #fff;
 }
-
-.menu:hover .menuContent {display: block;}
-.menuContent a:hover {color: green;}
+.menu_icon {
+  height: 26px;
+  width: 30px;
+  background: linear-gradient(to bottom, #fff 20%, transparent 20%, transparent 40%, #fff 41%, #fff 60%, transparent 61%, transparent 80%, #fff 81%);
+}
+.menu:hover .menu_content {display: block;}
+.menu_content a:hover {color: #1AB278;}
 
 /* ======== Media queries ========== */
 
 @media (min-width: 768px) {    
-  section {
+  main {
     width: 60%;
-  }
-  header {
-    background: #E9ECEF;
-  }
-  .headerBox {
-    justify-content: center;
-    flex-direction: row-reverse;
-    text-align: left;
-  }  
-  .headerText {
-    height: 75%;
-    width: 50%;
-  }
-  .headerImg {
-    height: 70%;
-    width: 50%;
-  }
-  .menuContent {
-    height: 406px;
   }
 }
 
 @media (min-width: 1200px) {  
   header {
     height: 100vh;
+    background: #E9ECEF;
+    position: relative;
   }
-  .headerText p {
-    width: 100%;
-    max-width: 624px;
+  .header_text {
+    width: 32%;
+    text-align: left;
+    position: absolute;
+    right: 20vw;
+    top: 14vh;
   }
-  .box {
+  .header_foto {
+    width: 48%;
+    position: absolute;
+    left: 10vw;
+    bottom: 0;
+  }
+  section {
+    position: relative;
+  }
+  section > div {
+    display: inline-block;
+    position: absolute;
     width: 47%;
   }
-  .text {
-    float: left;
+  #skills{
+    height: 640px;
   }
-  .skills {
-    float: right;
+  .skill_text {
+    top: 0;
+    padding-top: 24px;
   }
-  #skills .text {
-    margin-top: 20px;
+  .skill_box {
+    right: 0;
+    margin-top: 0;
   }
-  .experiences_text_left {
-    width: 49%;
+  #experience_text{
+    height: 420px;
+  }
+  #experience_text div:first-child {
     text-align: right;
   }
-
-  .experiences_text_right {
-    width: 48%;
-    margin-left: 3%;
+  #experience_text div:last-child {
+    right: 0;
+    top: 30px;
+  }
+  #experience_box {
+    height: 700px;
+    max-width: 86%;
+    margin: 0 auto;
+  }
+  #experience_box p {
+    padding: 0 4px;
+  }
+  .wordpress{
+    right: 0;
+  }
+  .design {
+    bottom: 0;
+  }
+  .commerce {
+    right: 0;
+    bottom: 0;
   }
   .menu {
     width: 50px;
   }
-  .menuTitle {
+  .menu_title {
     height: 100vh;
   }
-  .menuContent {
+  .menu_title div {
+    top: 5%;
+    left: 50%;
+  }
+  .menu_content {
     width: 234px;
     height: 100vh;
     bottom: 0px;
-    left: 42px;
+    left: 50px;
   }
-  .menu_links{
+  .menu_links {
     align-items: flex-start;
     margin-left: 40px;
   }
