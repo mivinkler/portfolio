@@ -1,90 +1,111 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 18px;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  line-height: 30px;
+  letter-spacing: .6px;
+  color: #363636;
 }
 h1 {
   font-size: 26px;
+  padding-bottom: 20px;
 }
 h2 {
-  font-size: 24px;
+  font-size: 22px;
+  padding: 5px 20px;
+  border-left: 4px solid #6886ad;
 }
 h3 {
   font-size: 20px;
-  font-weight: 500;
 }
-p:last-child {
-  margin-top: 30px;
+p {
+  padding-top: 20px;
+}
+
+/* ========== basic ========== */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 main {
-  width: 80%;
-  margin: 0 auto;
+  width: 1200px;
+  max-width: 100%;
+  padding: 0 30px;
 }
-section {
+footer {
+  height: 100px;
   width: 100%;
-  margin-top: 120px;
+  background-color: gray;
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* ========== header ========== */
 
-header {
+#header {
   height: 95vh;
-  background: linear-gradient(to top, #E9ECEF 58vh, #fff 42vh);
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 } 
-header div{
-  margin: 0 auto;
-}
 .header_text {
-  height: 40%;
-  width: 70%;
-  padding-top: 8vh;
   text-align: center;
+  padding: 10px 10px 40px;;
+  max-width: 600px;
+  min-height: 200px;
 }
-.header_foto {
+.header_text p {
+  font-size: 20px;
+  line-height: 30px;
+}
+.header_img {
   height: 60%;
-  width: 320px;
-  background: url('./images/mein_foto.png');
-  background-size: contain;
-  background-position: bottom;
+  width: 100%;
+  background-color: #E9ECEF;
+  background-image: url(./images/mein_foto.png);
+  background-size: 340px;
   background-repeat: no-repeat;
+  background-position: bottom;
 }
 
-/* ========== skills ========== */
+/* ------------------ skills -------------------- */
 
+#skills {
+  justify-content: center;
+  margin-top: 80px;
+}
+.skill_text{
+  padding-bottom: 30px;
+  width: 100%;
+}
 .skill_box {
-  margin-top: 60px;
+  width: 100%;
+  max-width: 600px;
 }
-.skill_box h3:nth-child(n+3) {
-  margin-top: 30px;
+.skill_title {
+  padding-top: 30px;
 }
 .skill_bar {
   background-color: #CED4DA;
   height: 26px;
 }
-.html {
-  width: 80%;
-}
-.css {
-  width: 70%;
-}
-.js {
-  width: 30%;
-}
-.git {
-  width: 30%;
-}
-.sql {
-  width: 20%;
-}
-.figma {
-  width: 80%;
-}
-.fotoshop {
-  width: 60%;
-}
+
+.html {width: 80%;}
+.css {width: 70%;}
+.js {width: 30%;}
+.git {width: 30%;}
+.sql {width: 20%;}
+.figma {width: 80%;}
+.fotoshop {width: 60%;}
+
 .animate_bar {
   animation: progress 3s normal forwards 1;
   height: 100%;
@@ -92,189 +113,180 @@ header div{
 }
 @keyframes progress {
   0% {
-    width: 0;
+      width: 0;
   }
   100% {
-    width: 100;
+      width: 100;
   }
 }
-/* ========== experience ========== */
+
+/* ------------------ experience text -------------------- */
 
 #experience_text {
-  width: 100%;
+  margin-top: 140px;
+  justify-content: center;
 }
-#experience_box div{
-  max-width: 400px;
+
+/* ------------------ experience box -------------------- */
+
+#experience_box {
+  margin-top: 120px;
+  justify-content: space-evenly;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 80px;
+  row-gap: 100px;
+  column-gap: 30px;
+} 
+#experience_box > div {
+  max-width: 400px;
 }
 #experience_box i {
   color: #4a7196;
 }
-#experience_box h2 {
-  margin-top: 20px;
-  margin-bottom: 20px;
+#experience_box h3 {
+  padding: 20px 0;
 }
 #experience_box p {
   text-align: justify;
 }
-/* ========== text_job ========== */
-#text_job{
+
+/* ------------------ text job -------------------- */
+
+#text_job {
   text-align: center;
-  margin-top: 180px;
-  margin-bottom: 100px;
+  margin-top: 160px;
+  margin-bottom: 200px;
 }
-#text_job p:last-child{
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+#text_job a{
+  color: #fff;
 }
-/* ========== Menu ========== */
+
+#text_job p:last-child {
+
+}
+#text_job button {
+  background-color: #4a7196;
+  border: none;
+  padding: 15px 32px;
+  margin: 50px 0 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  opacity: 0.95;
+}
+#text_job button:hover {
+  opacity: 1;
+}
+
+/* ------------------ menu -------------------- */
 
 .menu {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  left: 0;
 }
-.menu_title {
-  width: 100%;
-  height: 50px;
-  background-color: #343A40;
-  color: white;
-  font-size: 16px;
-  border: none;
-  position: relative;
-}
-.menu_title div {
-  position: absolute;
-  top: 50%;
-  left: 6%;
-  transform: translate(-50%, -50%);
+.menu_box {
+  display: flex;
+  flex-wrap: wrap;
 }
 .menu_content {
+  height: 300px;
+  width: 100vw;
   display: none;
-  width: 100%;
-  height: 58vh;      /*menu hohe*/
-  position: absolute;
-  bottom: 50px;
   background-color: #212529;
-  z-index: 1;
 }
-.menu_links {
-  width: 100%;
+.menu_link {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 26px;
 }
-.menu_links a {
-  text-decoration: none;
+.menu_link a {
+  width: 106px;
+  line-height: 40px;
   color: #fff;
+}
+.menu_title {
+  width: 100vw;
+  height: 5vh;
+  background-color: #343A40;
+  color: #fff;
+  position: relative;
 }
 .menu_icon {
   height: 26px;
   width: 30px;
   background: linear-gradient(to bottom, #fff 20%, transparent 20%, transparent 40%, #fff 41%, #fff 60%, transparent 61%, transparent 80%, #fff 81%);
+  position: absolute;
+  left: 30px;
+  top: 10px;
 }
 .menu:hover .menu_content {display: block;}
 .menu_content a:hover {color: #1AB278;}
 
-/* ======== Media queries ========== */
+/* ------------------ media qeuries -------------------- */
 
-@media (min-width: 768px) {    
-  main {
-    width: 60%;
+@media (min-width: 992px){   
+  .box > div {
+      width: 48%;
   }
-}
-
-@media (min-width: 1200px) {  
-  header {
-    height: 100vh;
-    background: #E9ECEF;
-    position: relative;
+  #header {
+      height: 100vh;
+      align-content: center;
+      justify-content: center;
+      background-color: #E9ECEF;
   }
   .header_text {
-    width: 32%;
-    text-align: left;
-    position: absolute;
-    right: 20vw;
-    top: 14vh;
+      text-align: left;
+      order: 2;
+      padding-bottom: 260px;
   }
-  .header_foto {
-    width: 48%;
-    position: absolute;
-    left: 10vw;
-    bottom: 0;
+  .header_img {
+      height: 100%;
+      max-width: 400px;
+      background-size: contain;
+      order: 1;
   }
-  section {
-    position: relative;
-  }
-  section > div {
-    display: inline-block;
-    position: absolute;
-    width: 47%;
-  }
-  #skills{
-    height: 640px;
-  }
-  .skill_text {
-    top: 0;
-    padding-top: 24px;
-  }
-  .skill_box {
-    right: 0;
-    margin-top: 0;
-  }
-  #experience_text{
-    height: 420px;
-  }
-  #experience_text div:first-child {
-    text-align: right;
-  }
-  #experience_text div:last-child {
-    right: 0;
-    top: 30px;
-  }
-  #experience_box {
-    height: 700px;
-    max-width: 86%;
-    margin: 0 auto;
-  }
-  #experience_box p {
-    padding: 0 4px;
-  }
-  .wordpress{
-    right: 0;
-  }
-  .design {
-    bottom: 0;
-  }
-  .commerce {
-    right: 0;
-    bottom: 0;
-  }
-  .menu {
-    width: 50px;
-  }
-  .menu_title {
-    height: 100vh;
-  }
-  .menu_title div {
-    top: 5%;
-    left: 50%;
+  main {
+      padding: 0 30px 0 80px;
   }
   .menu_content {
-    width: 234px;
-    height: 100vh;
-    bottom: 0px;
-    left: 50px;
+      height: 100vh;
+      width: 260px;
+      order: 2;
   }
-  .menu_links {
-    align-items: flex-start;
-    margin-left: 40px;
+  .menu_title {
+      height: 100vh;
+      width: 50px;
+      order: 1;
+  }
+  .menu_icon {
+      left: 10px;
+      top: 20px;
+  }
+  #skills {
+      justify-content: space-between;
+  }
+  .skill_text {
+      padding-top: 40px;
+  }
+  #experience_text{
+      justify-content: space-between;
+      margin-top: 180px;
+  }
+  #experience_text h2 {
+      border-right: 4px solid #6886ad;
+      border-left: none;
+  }
+  #experience_text div:first-child {
+      text-align: right;
+  }
+  #experience_text div:last-child {
+      padding-top: 44px;
+  }
+  #text_job {
+      max-width: 80%;
+      margin: 180px auto 200px;
   }
 }
