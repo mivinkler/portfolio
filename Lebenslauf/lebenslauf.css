@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #363636;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: .5px;
+    line-height: 23px;
+}
+h2 {
+    font-size: 22px;
+}
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #363636eb;
+}
+p {
+    padding-top: 6px;
+}
+ul > li:not(li::first-line){
+    padding-left: 30px;
+}
+/* -------------------- header --------------------- */
+#resume_header {
+    width: 100vw;
+    height: 100%;
+    background-color: #4a7196;
+    padding: 10px;
+}
+.resume_titel {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+h1 {
+    font-size: 26px;
+    font-weight: 600;
+    border-left: 4px solid #fff;
+    padding: 4px 22px;
+    color: #fff;
+    margin: 20px 24px;
+}
+.resume_titel a {
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #345370;
+    padding: 5px 24px;
+    height: 100%;
+    align-self: flex-end;
+    margin-right: 20px;
+}
+.resume_titel a:hover {
+    opacity: .9;
+}
+
+/* -------------------- main --------------------- */
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 10px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table:not(.privat){
+    margin-top: 140px;
+}
+table tr:nth-child(2) > td {
+    padding-top: 30px;
+}
+table tr:last-child > td {
+    padding-bottom: 30px;
+}
+th {
+    border-bottom: 3px solid #4a7196;
+    padding: 15px;
+    text-align: left;
+}
+td {
+    padding: 15px;
+    vertical-align: top;
+    text-align: left;
+}
+.titel {
+    width: 30%;
+    min-width: 112px;
+    background-color: #e8ecf0;
+}
+.content {
+    width: 70%;
+}
+ul {
+    margin-top: 10px;
+}
+li {
+    list-style-type: square;
+    margin-left: 40px;
+}
+li::marker {
+    color: #2568a7;
+}
+
+/* -------------------- media queries --------------------- */
+
+@media (min-width: 992px){ 
+    td {
+        padding-left: 50px;
+    }
+    .menu_icon {
+        top: 50px;
+    }
+}
