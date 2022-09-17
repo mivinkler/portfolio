@@ -5,29 +5,29 @@
 	justify-content: center;
 }
 #slider h2 {
-	width: 240px;
-    margin: 200px auto 100px;
+	width: 44%;
+	min-width: 220px;
+    margin: 200px auto 80px;
 }
-/* -----------------картинки------------------ */
+/* -----------------content------------------ */
 
 #slides{
     order: 2;
 	width: 80%; /* 80% from 900px */
 }
-.slides_frame { /*сркывает все, что находится за пределами этого блока*/
+.slides_frame { /*blendet alles außerhalb dieses Blocks aus*/
 	width: 100%; /* 100% from 80% */
 	overflow: hidden;
 }
-.slide_box { /*общий размер блока с изображениями и анимация*/
+.slide_box {
 	width: 300%;  /* 300% from 1200px */
 	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
-.slide_box article { /*видимый image, все остальные images справа*/
+.slide_box article {
 	width: 33.3333%; /* 33% from 500% */
 	float: left;
 }
 .slide_img {
-	/* background-color: #76c8ff; */
 	width: 80%;
     margin: 0 auto;
 	height: 340px;
@@ -51,7 +51,7 @@
 	font-style: italic;
 	color: #4a7196;
 	width: 240px;
-    margin: 0 auto;
+	margin: 36px auto;
 }
 .slide_link:hover {
 	font-weight: 600;
@@ -60,14 +60,16 @@
 	width: 100%;
 	padding: 40px 0;
 	text-align: center;
-	/* background-color: green; */
 }
 .slide_text {
-	padding: 30px 30px 60px;
+	padding: 0 30px 60px;
 	text-align: center;
-	/* background-color: rgb(81, 0, 128); */
 }
-/*позиция изображения при активации переключателя*/
+.portfolio_link {
+	visibility: hidden;
+}
+
+/*Bildposition, wenn der Schalter aktiviert ist*/
 #switch1:checked ~ #slides .slide_box {
 	margin-left: 0;
 }
@@ -78,17 +80,16 @@
 	margin-left: -200%;
 }
 
-/* -----------------стрелки------------------ */
+/* -----------------arrows------------------ */
 
 #arrows_left {
 	order: 1;
 }
-/*связка левой стрелки и точек*/
-/*если switch1-5 активны, то идет обращение к лейблу из блока с id контроля*/
+
 #switch1:checked ~ #arrows_left label:nth-child(3), 
 #switch2:checked ~ #arrows_left label:nth-child(1),
 #switch3:checked ~ #arrows_left label:nth-child(2) {
-	background: url('prev.png') no-repeat; /*заливка фона картинкой без повторений*/
+	background: url('prev.png') no-repeat;
 	display: block;
 	height: 68px;
 	width: 68px;
@@ -98,46 +99,45 @@
 #arrows_right {
 	order: 3;
 }
-/*связка правой стрелки и точек*/
+
 #switch1:checked ~ #arrows_right label:nth-child(2), 
 #switch2:checked ~ #arrows_right label:nth-child(3),
 #switch3:checked ~ #arrows_right label:nth-child(1) {
-	background: url('next.png') no-repeat; /*заливка фона картинкой без повторений*/
+	background: url('next.png') no-repeat;
 	display: block;
 	height: 68px;
 	width: 68px;
 	margin-top: 140px;
 }
 
-#arrows label:hover { /*прозрачность стрелок при наведении*/
+#arrows label:hover { /*Pfeiltransparenz bei Hover*/
 	opacity: 0.6;
 }
-#arrows label { /*прозрачность стрелок при отводе курсора*/
+#arrows label { /*Transparenz beim Zurückziehen des Cursors*/
 	transition: opacity 0.2s ease-out;
 }
-label { /*при наведении на стрелки и переключатели - курсор изменится*/
+label {
 	cursor: pointer;
 }
 
+/* -----------------points------------------ */
 
-/* -----------------точки------------------ */
-
-#points { /*расположение блока с переключателями*/
+#points {
     order: 3;
     text-align: center;
 	width: 60%;
 }
 
-#points label { /*стиль каждой точки*/
-	display: inline-block; /*расположение в строку*/
+#points label {
+	display: inline-block;
 	width: 30%;
 }
 
-#points label:hover { /*поведение чекбокса при наведении*/
+#points label:hover {
 	background: #E9ECEF;
 }
 
-/*цвет активного лейбла при активации чекбокса*/
+/*Farbe des Labels, wenn aktiv*/
 #switch1:checked ~ #points label:nth-child(1),
 #switch2:checked ~ #points label:nth-child(2),
 #switch3:checked ~ #points label:nth-child(3),
@@ -153,7 +153,7 @@ label { /*при наведении на стрелки и переключат�
 }
 /* -----------------inputs----------------- */
 
-input[name="control"] { /*скрывает стандартные инпуты (чекбоксы) на странице*/
+input[name="control"] { /*blendet standarte inputs aus*/
 	display: none;
 }
 

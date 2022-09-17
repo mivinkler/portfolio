@@ -156,9 +156,10 @@ footer {
 .line {
   background-color: #6c929d;
   height: 2px;
+  width: 80%;
   border: none;
   opacity: .5;
-  margin: 130px 0 70px;
+  margin: 170px auto 70px;
 }
 #text_job {
   text-align: center;
@@ -288,9 +289,9 @@ footer {
   #experience_text div:last-child {
       padding-top: 44px;
   }
-  .line {
+  /* .line {
       margin: 200px 0 120px;
-  }
+  } */
   #text_job {
       max-width: 80%;
       margin: 0 auto 180px;
