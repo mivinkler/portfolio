@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./slider/slider.css">
     <title>Porfolio neu</title>
 </head>
 <body>
@@ -25,31 +26,31 @@
                 <p>Ich habe ein Fortbildungskurs als Frontend Webentwickler bei „Readischool“ München erfolgreich abgeschlossen und kann nun die Webentwicklung mittels CSS, HTML und JavaScript sicher anwenden.</p>
             </div> 
             <div class="skill_box">
-                <h3 class="skill_title">HTML</h3>
+                <h4 class="skill_title">HTML</h4>
                 <div class="skill_bar">
                     <div class="skill_value html"></div>
                 </div>
-                <h3 class="skill_title">CSS</h3>
+                <h4 class="skill_title">CSS</h4>
                 <div class="skill_bar">
                     <div class="skill_value css"></div>
                 </div>
-                <h3 class="skill_title">Javascript</h3>
+                <h4 class="skill_title">Javascript</h4>
                 <div class="skill_bar">
                     <div class="skill_value js"></div>
                 </div>
-                <h3 class="skill_title">git</h3>
+                <h4 class="skill_title">git</h4>
                 <div class="skill_bar">
                     <div class="skill_value git"></div>
                 </div>
-                <h3 class="skill_title">SQL</h3>
+                <h4 class="skill_title">SQL</h4>
                 <div class="skill_bar">
                     <div class="skill_value sql"></div>
                 </div>
-                <h3 class="skill_title">Figma</h3>
+                <h4 class="skill_title">Figma</h4>
                 <div class="skill_bar">
                     <div class="skill_value figma"></div>
                 </div>
-                <h3 class="skill_title">Fotoshop</h3>
+                <h4 class="skill_title">Fotoshop</h4>
                 <div class="skill_bar">
                     <div class="skill_value fotoshop"></div>
                 </div>
@@ -86,6 +87,59 @@
                 <p>Als Internethändler habe ich alle Prozesse von Einkauf, Zollabwicklung, Lieferung, Produktfotografie bis Verkauf und Versand kennengelernt.</p>
             </div>
         </section>
+        <section id="slider">
+            <h2>Meine Projekte</h2>
+            <div id="slider_contain">
+                <input checked type="radio" name="control" id="switch1">
+                <input type="radio" name="control" id="switch2">
+                <input type="radio" name="control" id="switch3">
+                <input type="radio" name="control" id="switch4">
+                <input type="radio" name="control" id="switch5">
+            <!-- контент -->
+            <div id="slides">
+                <div class="slides_frame">
+                    <div class="slide_box">
+                        <article>
+                            <div class="slide_img portfolio_image"></div> 
+                            <h3 class="slide_titel">Portfolio</h3>                                 
+                            <a class="slide_link" href="#"></a>                            
+                            <p class="slide_text">Das ist meine erste Webseite, die ich ohne CMS-Systeme erstellt habe. Die Quellcode ist mittels nativen CSS, HTML und JavaScript geschrieben. Bei der Erstellung dieser Seite habe ich eine einfache Objektpositionierung angewendet, ohne Flexbox, Grid oder Fload zu verwenden.</p>
+                            </article>
+                        <article>
+                            <div class="slide_img trottoir_image"></div>           
+                            <h3 class="slide_titel">Bauunternehmen</h3>                     
+                            <a class="slide_link" href="https://mivinkler.github.io/trottoir/">Link zur Website &raquo;</a>                              
+                            <p class="slide_text">Vor einigen Jahren erstellte ich die Webseite für Bauunternehmen mit WordPress. Für die Praxis der Entwicklung von Websites habe ich den alten Code in reines CSS und HTML umgeschrieben, indem ich nur Flexbox zum Positionieren von Objekten verwendet habe.</p>
+                        </article>
+                        <article>
+                            <div class="slide_img optizoom_image"></div>    
+                            <h3 class="slide_titel">Online-Shop</h3>                            
+                            <a class="slide_link" href="https://mivinkler.github.io/optizoom/">Link zur Website &raquo;</a>                              
+                            <p class="slide_text">Hier handelt sich um ein Online-Shop für optische Waren. Die Webseite war für Dropshipping von Waren aus China gedacht und war mittels Shopify zusammengestellt. Ich habe die Webseite mit nativen CSS und HTML umgeschrieben, um die Positionierung von Objekten mit CSS Grid zu lernen.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <!-- стрелки -->
+            <div id="arrows_left">
+                <label for="switch1"></label>
+                <label for="switch2"></label>
+                <label for="switch3"></label>
+            </div>
+            <div id="arrows_right">
+                <label for="switch1"></label>
+                <label for="switch2"></label>
+                <label for="switch3"></label>
+            </div>
+            <!-- точки  -->
+            <div id="points">
+                <label for="switch1" class="slide_icon"><img src="./slider/portfolio_mak.png" alt=""></label>
+                <label for="switch2" class="slide_icon"><img src="./slider/trottoir_mak.png" alt=""></label>
+                <label for="switch3" class="slide_icon"><img src="./slider/optizoom_mak.png" alt=""></label>
+            </div>
+        </div>
+        </section>
+        <hr class="line">
         <section id="text_job">
             <p>Wie sich in der Praxis gezeigt hat, arbeite ich sehr konzentriert und genau. Alle Aufgaben bringe ich gewissenhaft zu Ende. Teamfähigkeit, Einsatzbereitschaft sowie ein hohes Maß an Flexibilität sind für mich selbstverständlich. Darüber hinaus habe ich einen in Deutschland anerkanntes Fachabitur sowie kaufmännische Ausbildung. Die Einzelheiten zu meinem Werdegang sind in meinem Lebenslauf aufgeführt:</p>
             <button>
@@ -93,6 +147,7 @@
             </button>
             <p>Mit meinen Kenntnissen und fachlicher Erfahrung kann ich Sie bei der Erstellung und Wartung von Webseiten unterstützen. Wenn Sie entsprechend meiner Qualifikationen und Kenntnisse eine Stelle zu besetzen haben, kontaktieren Sie mich! Auf Ihre Meldung freue ich mich!</p>
         </section>
+        
     </main>
     <!-- <footer></footer> -->
     <nav class="menu">
@@ -103,7 +158,7 @@
                     <a href="#skills">Kenntnisse</a>
                     <a href="#experience_text">Erfahrungen</a>
                     <a href="#form">Projekte</a>
-                    <a href="./Lebenslauf/lebenslauf.html">Lebenslauf</a>
+                    <a href="#form">Lebenslauf</a>
                 </div>
             </div>
             <div class="menu_title">

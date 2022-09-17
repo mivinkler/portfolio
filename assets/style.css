@@ -21,6 +21,9 @@ h2 {
 h3 {
   font-size: 20px;
 }
+h4 {
+  font-size: 16px;
+}
 p {
   padding-top: 20px;
 }
@@ -94,8 +97,8 @@ footer {
   padding-top: 30px;
 }
 .skill_bar {
-  background-color: #CED4DA;
-  height: 26px;
+  background-color: #e9ecef;
+  height: 22px;
 }
 
 .html {width: 80%;}
@@ -109,7 +112,7 @@ footer {
 .animate_bar {
   animation: progress 3s normal forwards 1;
   height: 100%;
-  background-color: grey;
+  background-color: #557e8bcf;
 }
 @keyframes progress {
   0% {
@@ -150,19 +153,21 @@ footer {
 }
 
 /* ------------------ text job -------------------- */
-
+.line {
+  background-color: #6c929d;
+  height: 2px;
+  border: none;
+  opacity: .5;
+  margin: 130px 0 70px;
+}
 #text_job {
   text-align: center;
-  margin-top: 160px;
   margin-bottom: 200px;
 }
 #text_job a{
   color: #fff;
 }
 
-#text_job p:last-child {
-
-}
 #text_job button {
   background-color: #4a7196;
   border: none;
@@ -267,9 +272,7 @@ footer {
   }
   #skills {
       justify-content: space-between;
-  }
-  .skill_text {
-      padding-top: 40px;
+      margin-top: 120px;
   }
   #experience_text{
       justify-content: space-between;
@@ -285,8 +288,11 @@ footer {
   #experience_text div:last-child {
       padding-top: 44px;
   }
+  .line {
+      margin: 200px 0 120px;
+  }
   #text_job {
       max-width: 80%;
-      margin: 180px auto 200px;
+      margin: 0 auto 180px;
   }
 }
