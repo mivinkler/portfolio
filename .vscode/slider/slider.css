@@ -51,10 +51,10 @@
 	font-style: italic;
 	color: #4a7196;
 	width: 240px;
-	margin: 36px auto;
+	margin: 26px auto;
 }
 .slide_link:hover {
-	font-weight: 600;
+	font-size: 19px;
 }
 .slide_titel {
 	width: 100%;
@@ -62,7 +62,7 @@
 	text-align: center;
 }
 .slide_text {
-	padding: 0 30px 60px;
+	padding: 0 30px 80px;
 	text-align: center;
 }
 .portfolio_link {
