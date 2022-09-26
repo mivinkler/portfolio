@@ -5,7 +5,6 @@
     color: #363636;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: .5px;
-    line-height: 23px;
 }
 h2 {
     font-size: 22px;
@@ -54,7 +53,7 @@ h1 {
     margin-right: 20px;
 }
 .resume_titel a:hover {
-    opacity: .9;
+    opacity: .8;
 }
 
 /* -------------------- main --------------------- */
@@ -62,13 +61,17 @@ h1 {
 main {
     width: 100%;
     max-width: 1200px;
+    margin-bottom: 100px;
+}
+.privat th {
+    border: none;
 }
 table {
     border-collapse: collapse;
     width: 100%;
 }
 table:not(.privat){
-    margin-top: 140px;
+    margin-top: 100px;
 }
 table tr:nth-child(2) > td {
     padding-top: 30px;
@@ -115,6 +118,6 @@ li::marker {
         top: 36px;
     }
     .menu_box li:last-child a{
-        color: #8CDEA7;
+        color: #1cbf99;
     }
 }

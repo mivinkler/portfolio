@@ -79,7 +79,7 @@ main {
     justify-content: center;
     margin-top: 80px;
 }
-.skill_text{
+.skill_text {
     padding-bottom: 30px;
     width: 100%;
 }
@@ -151,18 +151,18 @@ main {
     width: 80%;
     border: none;
     opacity: .6;
-    margin: 170px auto 70px;
+    margin: 120px auto 70px;
 }
 #text_job {
     text-align: center;
-    margin-bottom: 200px;
+    height: 80vh;
 }
 #text_job a{
     color: #fff;
 }
 
 #text_job button {
-    background-color: #71929E;
+    background-color: #5c7f8d;
     border: none;
     padding: 15px 32px;
     margin: 50px 0 70px;
@@ -210,9 +210,6 @@ main {
 .menu_links {
     flex-direction: column;
 }
-.menu_letter {
-    color: #E9ECEF;
-}
 .menu_box li {
     list-style: none;
 }
@@ -232,7 +229,7 @@ main {
     font-size: 12px;
 }
 .menu_activ {
-    color: #8CDEA7;
+    color: #1cbf99;
 }
 .menu_icon { 
     height: 20px;
@@ -244,10 +241,7 @@ main {
 }
 
 #menu:hover .menu_words {display: block;} 
-.menu_words a:hover {font-size: 19px;}
-
-
-
+.menu_words a:hover {font-size: 19px; color: #fff;}
 
 
 /* ------------------ media qeuries -------------------- */
@@ -274,7 +268,7 @@ main {
         order: 1;
     }
     main {
-        padding: 0 30px 0 80px;
+        padding-left: 80px;
     }
     #skills {
         justify-content: space-between;
@@ -296,7 +290,7 @@ main {
     }
     #text_job {
         max-width: 80%;
-        margin: 0 auto 180px;
+        margin: 0 auto;
     }
     .menu_box{
         width: 100%;

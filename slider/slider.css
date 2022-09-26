@@ -9,6 +9,9 @@
 	min-width: 220px;
     margin: 200px auto 80px;
 }
+input[name="control"] { /*blendet standarte inputs aus*/
+	display: none;
+}
 /* -----------------content------------------ */
 
 #slides{
@@ -44,12 +47,12 @@
 .optizoom_image {
 	background-image: url(./optizoom1.jpg)
 }
-
 .slide_link {
 	display: block;
 	text-align: center;
 	font-style: italic;
-	color: #4a7196;
+	font-weight: 600;
+	color: #304662;
 	width: 240px;
 	margin: 26px auto;
 }
@@ -62,14 +65,13 @@
 	text-align: center;
 }
 .slide_text {
-	padding: 0 30px 80px;
+	padding: 0 30px 50px;
 	text-align: center;
 }
 .portfolio_link {
 	visibility: hidden;
 }
-
-/*Bildposition, wenn der Schalter aktiviert ist*/
+/*Bildposition, wenn der Schalter aktiv*/
 #switch1:checked ~ #slides .slide_box {
 	margin-left: 0;
 }
@@ -85,38 +87,34 @@
 #arrows_left {
 	order: 1;
 }
-
-#switch1:checked ~ #arrows_left label:nth-child(3), 
-#switch2:checked ~ #arrows_left label:nth-child(1),
-#switch3:checked ~ #arrows_left label:nth-child(2) {
-	background: url('prev.png') no-repeat;
-	display: block;
-	height: 68px;
-	width: 68px;
-	margin-top: 140px;
+#switch1:checked ~ #arrows_left label:nth-child(3)::before, 
+#switch2:checked ~ #arrows_left label:nth-child(1)::before,
+#switch3:checked ~ #arrows_left label:nth-child(2)::before {
+	content: "\f060";
 }
 
 #arrows_right {
 	order: 3;
 }
-
-#switch1:checked ~ #arrows_right label:nth-child(2), 
-#switch2:checked ~ #arrows_right label:nth-child(3),
-#switch3:checked ~ #arrows_right label:nth-child(1) {
-	background: url('next.png') no-repeat;
+#switch1:checked ~ #arrows_right label:nth-child(2)::before, 
+#switch2:checked ~ #arrows_right label:nth-child(3)::before,
+#switch3:checked ~ #arrows_right label:nth-child(1)::before {
+	content: "\f061";
+}
+label::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 600;
+	font-size: 30px;
+	border: 3px solid;
+	padding: 14px 16px;
+	border-radius: 50%;
+	color: #bdc3c9;
 	display: block;
-	height: 68px;
-	width: 68px;
 	margin-top: 140px;
-}
 
-#arrows label:hover { /*Pfeiltransparenz bei Hover*/
-	opacity: 0.6;
 }
-#arrows label { /*Transparenz beim Zurückziehen des Cursors*/
-	transition: opacity 0.2s ease-out;
-}
-label {
+label:hover::before {
+	opacity: 0.7;
 	cursor: pointer;
 }
 
@@ -127,35 +125,27 @@ label {
     text-align: center;
 	width: 60%;
 }
-
 #points label {
 	display: inline-block;
 	width: 30%;
+	padding: 20px 0;
 }
-
 #points label:hover {
 	background: #E9ECEF;
 }
-
 /*Farbe des Labels, wenn aktiv*/
 #switch1:checked ~ #points label:nth-child(1),
 #switch2:checked ~ #points label:nth-child(2),
-#switch3:checked ~ #points label:nth-child(3),
-#switch4:checked ~ #points label:nth-child(4),
-#switch5:checked ~ #points label:nth-child(5){
+#switch3:checked ~ #points label:nth-child(3){
 	background: #CED4DA;
-
 }
 .slide_icon img{
 	width: 100%;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
-/* -----------------inputs----------------- */
 
-input[name="control"] { /*blendet standarte inputs aus*/
-	display: none;
-}
+/* ----------------- media queries----------------- */
 
 @media (max-width: 748px){   
 	#arrows_left,
@@ -168,9 +158,10 @@ input[name="control"] { /*blendet standarte inputs aus*/
 	.slide_img {
 		height: 220px;
 	}
-	.slide_text {
-		padding: 30px 0 60px;
-	}
 	#points {
-		width: 100%;}
+		width: 100%;
+	}
+	#points label {
+		padding: 10px;
+	}
 }
