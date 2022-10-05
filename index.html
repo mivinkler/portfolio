@@ -5,27 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./slider/slider.css">
     <title>Porfolio neu</title>
 </head>
 <body>
-    <section id="header">
-        <div class="header_text">
-            <h1>Hallo, ich bin Mikhail</h1>
-            <p>Ich bin Junior Webentwickler aus München. <br>Um in meinem neuen Beruf voranzukommen, erforsche ich gern verschiedene Kodierungsoptionen und Frameworks.</p>
-        </div>
-        <div class="header_img">
+    <header>
+        <section id="header" class="header">
+            <div class="header_text">
+                <h1>Hallo, ich bin Mikhail</h1>
+                <p>Ich bin Junior Webentwickler aus München. Um in meinem neuen Beruf voranzukommen, erforsche ich gern verschiedene Kodierungsoptionen und Frameworks.</p>
+            </div>
             <div class="header_foto"></div>
-        </div>
-    </section>
+        </section>
+    </header>
     <main>
-        <section id="skills" class="box">
-            <div class="skill_text">
+        <section id="skills" class="skills">
+            <div class="skills_text">
                 <h2>Meine Kenntnisse</h2>
                 <p>Seit vielen Jahren habe ich als Hobby Websiten auf CMS-Systemen aufgebaut, sowie in Teams bei Webprojekten mitgewirkt. Daraufhin habe ich mich entschieden, mein Hobby zum Beruf zu machen.</p>
                 <p>Ich habe einen Fortbildungskurs als Frontend Webentwickler bei „Readischool“ München erfolgreich abgeschlossen und kann nun die Web-Programmierung mittels CSS, HTML und JavaScript sicher anwenden.</p>
             </div> 
-            <div class="skill_box">
+            <div class="skills_box">
                 <h4 class="skill_title">HTML</h4>
                 <div class="skill_bar">
                     <div class="skill_value html"></div>
@@ -56,7 +55,7 @@
                 </div>
             </div>
         </section>
-        <section id="experience_text" class="box">
+        <section id="experience" class="experience">
             <div> 
                 <h2>Meine Erfahrungen</h2>
                 <p>In meiner beruflichen Werdegang konnte ich große Erfahrung im Bereich der Webentwicklung sammeln. Zum Beispiel habe ich in einem Team anhand der Qualitätsberichten von Krankenhäusern eine Webseite entwickelt, die alle Kliniken in Deutschland auf mehreren Sprachen präsentiert hat. Meine Tätigkeit umfasste Datenbankaufbau und Suchmaschinenoptimierung.</p>
@@ -65,7 +64,7 @@
                 <p>Ein weiterer Schwerpunkt in meiner beruflichen Werdegang sind CMS-Systeme. Arbeiten mit WordPress hat mein Interesse am Programmieren aufgebaut. Ich bin mit E-Commerce-Plattformen wie Shopify sehr gut vertraut. Auch Online-Handel inkl. Drop-Shipping war Bestandteil meiner Tätigkeit.</p>
             </div>
         </section>
-        <div id="experience_box" class="box">
+        <section class="experience_box">
             <div class="seo">
                 <i class="fa-solid fa-arrow-trend-up fa-3x"></i>
                 <h3>SEO</h3>
@@ -86,15 +85,16 @@
                 <h3>E-commerce</h3>
                 <p>Als Internethändler habe ich alle Prozesse vom Einkauf, Zollabwicklung, Lieferung, Produktfotografie bis Verkauf und Versand kennengelernt.</p>
             </div>
-        </div>
-        <section id="slider">
-            <h2>Meine Projekte</h2>
-            <div id="slider_contain">
-                <input type="radio" name="control" id="switch1">
-                <input checked type="radio" name="control" id="switch2">
-                <input type="radio" name="control" id="switch3">
+        </section>
+        <section id="slider" class="slider">
+            <div class="slider_titel">
+                <h2>Meine Projekte</h2>
+            </div>
+            <input type="radio" name="control" id="switch1">
+            <input checked type="radio" name="control" id="switch2">
+            <input type="radio" name="control" id="switch3">
             <!-- content -->
-            <div id="slides">
+            <div class="slides">
                 <div class="slides_frame">
                     <div class="slide_box">
                         <article>
@@ -116,59 +116,55 @@
                 </div>
             </div>
             <!-- arrows -->
-            <div id="arrows_left">
+            <div class="arrows_left">
                 <label for="switch1"></label>
                 <label for="switch2"></label>
                 <label for="switch3"></label>
             </div>
-            <div id="arrows_right">
+            <div class="arrows_right">
                 <label for="switch1"></label>
                 <label for="switch2"></label>
                 <label for="switch3"></label>
             </div>
             <!-- points  -->
-            <div id="points">
-                <label for="switch1" class="slide_icon"><img src="./slider/portfolio_mak.png" alt=""></label>
-                <label for="switch2" class="slide_icon"><img src="./slider/trottoir_mak.png" alt=""></label>
-                <label for="switch3" class="slide_icon"><img src="./slider/optizoom_mak.png" alt=""></label>
+            <div class="points">
+                <label for="switch1" class="slide_icon"><img src="./images/portfolio.png" alt=""></label>
+                <label for="switch2" class="slide_icon"><img src="./images/trottoir.png" alt=""></label>
+                <label for="switch3" class="slide_icon"><img src="./images/optizoom.png" alt=""></label>
             </div>
-        </div>
         </section>
-        <hr class="line">
-        <section id="text_job">
-            <p>Wie sich in der Praxis gezeigt hat, arbeite ich sehr konzentriert und genau. Alle Aufgaben bringe ich gewissenhaft zu Ende. Teamfähigkeit, Einsatzbereitschaft sowie ein hohes Maß an Flexibilität sind für mich selbstverständlich. Darüber hinaus habe ich einen in Deutschland anerkanntes Fachabitur sowie kaufmännische Ausbildung. Die Einzelheiten zu meinem Werdegang sind in meinem Lebenslauf aufgeführt:</p>
-            <button>
+        <section id="application" class="application">
+            <hr class="line">
+            <p>Ich arbeite sehr konzentriert und genau, alle Aufgaben bringe ich gewissenhaft zu Ende. Teamfähigkeit, Einsatzbereitschaft sowie ein hohes Maß an Flexibilität sind für mich selbstverständlich. Darüber hinaus habe ich anerkanntes Fachabitur und kaufmännische Ausbildung - die Einzelheiten sind in meinem Lebenslauf aufgeführt:</p>
+            <div class="btn">
                 <a href="./Lebenslauf/lebenslauf.html">Lebenslauf</a>
-            </button>
+            </div>
             <p>Mit meinen Kenntnissen und fachlicher Erfahrung kann ich Sie bei der Erstellung und Wartung von Webseiten unterstützen. Wenn Sie entsprechend meiner Qualifikationen und Kenntnisse eine Stelle zu besetzen haben, kontaktieren Sie mich! Auf Ihre Meldung freue ich mich!</p>
         </section>
     </main>
-    <!-- <footer></footer> -->
-    <nav id="menu">
-        <div class="menu_box">
-            <div class="menu_words">
-                <ul class="menu_links">
-                    <li><a class="menu_item" href="#header">Home</a></li>
-                    <li><a class="menu_item" href="#skills">Kenntnisse</a></li>
-                    <li><a class="menu_item" href="#experience_text">Erfahrungen</a></li>
-                    <li><a class="menu_item" href="#slider">Projekte</a></li>
-                    <li><a class="menu_item" href="#text_job">Lebenslauf</a></li>
-                </ul>
-            </div>
-            <div class="menu_letters">
-                <div class="menu_icon"></div>
-                <ul class="menu_letter">
-                    <li><a class="menu_item" href="#header">H</a></li>
-                    <li><a class="menu_item" href="#skills">K</a></li>
-                    <li><a class="menu_item" href="#experience_text">E</a></li>
-                    <li><a class="menu_item" href="#slider">P</a></li>
-                    <li><a class="menu_item" href="#text_job">L</a></li>
-                </ul>
-            </div>
+    <nav id="menu" class="menu">
+        <div class="menu_words">
+            <ul>
+                <li><a class="menu_item" href="#header">Home</a></li>
+                <li><a class="menu_item" href="#skills">Kenntnisse</a></li>
+                <li><a class="menu_item" href="#experience">Erfahrungen</a></li>
+                <li><a class="menu_item" href="#slider">Projekte</a></li>
+                <li><a class="menu_item" href="#application">Lebenslauf</a></li>
+            </ul>
+        </div>
+        <div class="menu_letters">  
+            <div class="menu_icon"></div>             
+            <ul>
+                <li><a class="menu_item" href="#header">H</a></li>
+                <li><a class="menu_item" href="#skills">K</a></li>
+                <li><a class="menu_item" href="#experience">E</a></li>
+                <li><a class="menu_item" href="#slider">P</a></li>
+                <li><a class="menu_item" href="#application">L</a></li>
+            </ul>
         </div>
     </nav>
     <script src="https://kit.fontawesome.com/189a604098.js" crossorigin="anonymous"></script>
-    <script src="./navi_scroll.js"></script>
+    <script src="./navi.js"></script>
     <script src="./scroll.js"></script>
 </body>
 </html>
