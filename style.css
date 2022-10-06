@@ -44,6 +44,9 @@ main {
     padding: 0 10px;
     max-width: 600px;
 }
+.header_text p {
+    font-size: 1.1em;
+}
 
 .header_foto {
     height: 50%;
@@ -241,7 +244,7 @@ label:hover::before {
 
 .application {
     text-align: center;
-    margin-bottom: 400px;
+    margin-bottom: 300px;
 }
 .line {
     background-color: #a4b6ce;
@@ -373,7 +376,7 @@ label:hover::before {
         padding-top: 42px;
     }
     .slider {
-        max-width: 260px auto;
+        margin: 260px auto;
     }
     .menu {
         left: 0;
