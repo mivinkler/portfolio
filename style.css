@@ -15,7 +15,7 @@ h1 {
 }
 h2 {
     font-size: 1.2em;
-    padding: 1% 20px;
+    padding: 10px 20px;
     border-left: 4px solid #6886ad;
 }
 h3 {
@@ -93,9 +93,6 @@ main {
 @keyframes progress {
     0% {
         width: 0;
-    }
-    100% {
-        width: 100;
     }
 }
 
