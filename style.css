@@ -44,10 +44,6 @@ main {
     padding: 0 10px;
     max-width: 600px;
 }
-.header_text p {
-    font-size: 1.1em;
-}
-
 .header_foto {
     height: 50%;
     width: 100%;
@@ -77,11 +73,11 @@ main {
     background-color: #e9ecef;
     height: 22px;
 }
-.html {width: 90%;}
-.css {width: 85%;}
-.js {width: 60%;}
+.html {width: 85%;}
+.css {width: 80%;}
+.js {width: 50%;}
 .git {width: 40%;}
-.sql {width: 30%;}
+.sql {width: 25%;}
 .figma {width: 80%;}
 .fotoshop {width: 70%;}
 
@@ -108,7 +104,7 @@ main {
 }
 .experience_box {
     text-align: center;
-    gap: 100px;
+    gap: 150px;
     margin-top: 100px;
 } 
 .experience_box > div {
@@ -370,10 +366,13 @@ label:hover::before {
         text-align: right;
     }
     .experience div:last-child {
-        padding-top: 42px;
+        padding-top: 50px;
     }
     .slider {
-        margin: 260px auto;
+        margin: 220px auto;
+    }
+    .slide_text {
+        margin-bottom: 5rem;
     }
     .menu {
         left: 0;
