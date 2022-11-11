@@ -1,8 +1,8 @@
-// Создать наблюдателя
+// Create Observer
 const observer = new IntersectionObserver(entries => {  
-  // перебор записей
+  // enumerate records
   entries.forEach(entry => {    
-    // если элемент появился    
+    //if the element is present    
     if (entry.isIntersecting) {            
       let skill_value = document.getElementsByClassName("skill_value");      
       for (var i = 0; i < skill_value.length; i++) {      
@@ -11,7 +11,7 @@ const observer = new IntersectionObserver(entries => {
     }    
   });
 });
-// Сообщить наблюдателю, какие элементы следует отслеживать
+// Tell the observer which elements to watch
 observer.observe(document.querySelector('.skill_bar')); 
 
 

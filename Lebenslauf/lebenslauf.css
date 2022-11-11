@@ -5,6 +5,7 @@ h3 {
 }
 p {
     padding-top: 6px;
+    padding-left: 20px;
 }
 #resume_header {
     width: 100%;
@@ -58,7 +59,7 @@ th {
     text-align: left;
 }
 td {
-    padding: 20px;
+    padding: 20px 40px;
     vertical-align: top;
     text-align: left;
 }
