@@ -1,8 +1,5 @@
-// Create Observer
 const observer = new IntersectionObserver(entries => {  
-  // enumerate records
-  entries.forEach(entry => {    
-    //if the element is present    
+  entries.forEach(entry => {       
     if (entry.isIntersecting) {            
       let skill_value = document.getElementsByClassName("skill_value");      
       for (var i = 0; i < skill_value.length; i++) {      
@@ -11,7 +8,6 @@ const observer = new IntersectionObserver(entries => {
     }    
   });
 });
-// Tell the observer which elements to watch
 observer.observe(document.querySelector('.skill_bar')); 
 
 
