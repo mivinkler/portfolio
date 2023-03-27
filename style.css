@@ -76,8 +76,9 @@ main {
 .html {width: 85%;}
 .css {width: 80%;}
 .js {width: 60%;}
-.git {width: 40%;}
+.php {width: 40%;}
 .sql {width: 25%;}
+.git {width: 20%;}
 
 .animate_bar {
     animation: progress 3s normal forwards 1;
