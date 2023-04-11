@@ -73,11 +73,11 @@ main {
     background-color: #e9ecef;
     height: 22px;
 }
-.html {width: 85%;}
-.css {width: 80%;}
-.js {width: 60%;}
-.php {width: 40%;}
-.sql {width: 25%;}
+.html {width: 90%;}
+.css {width: 90%;}
+.js {width: 70%;}
+.php {width: 60%;}
+.sql {width: 30%;}
 .git {width: 20%;}
 
 .animate_bar {
