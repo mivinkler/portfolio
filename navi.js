@@ -1,4 +1,4 @@
-const observer1 = new IntersectionObserver((entries)  => {
+const observer1 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             document.querySelectorAll('.menu_item').forEach((link) => {
@@ -9,7 +9,7 @@ const observer1 = new IntersectionObserver((entries)  => {
             });
         }
     });
-}, { 
+}, {
     threshold: 0.7,
 });
 
