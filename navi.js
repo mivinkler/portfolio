@@ -17,4 +17,5 @@ const observer1 = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('section').forEach(
     (section) => observer1.observe(section)
+    
 );
