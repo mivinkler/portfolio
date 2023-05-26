@@ -82,7 +82,7 @@ main {
 
 .skill_bar {
     background-color: #e9ecef;
-    height: 22px;
+    height: 20px;
 }
 
 .html {
@@ -103,6 +103,10 @@ main {
 
 .sql {
     width: 30%;
+}
+
+.laravel {
+    width: 50%;
 }
 
 .animate_bar {
