@@ -85,20 +85,12 @@ main {
     height: 20px;
 }
 
-.html {
-    width: 92%;
-}
-
-.css {
-    width: 92%;
-}
-
 .js {
-    width: 70%;
+    width: 75%;
 }
 
 .php {
-    width: 60%;
+    width: 80%;
 }
 
 .sql {
@@ -106,7 +98,11 @@ main {
 }
 
 .laravel {
-    width: 50%;
+    width: 70%;
+}
+
+.vue {
+    width: 40%;
 }
 
 .animate_bar {
